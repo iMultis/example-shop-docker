@@ -1,0 +1,4 @@
+api
+.idea
+.env
+docker/postgres/data
