@@ -18,6 +18,8 @@ if [ ! -f /var/app/initalized ]; then
 
     composer install --prefer-dist --no-progress --no-suggest --no-interaction
 
+    cp /api/.env.example /api/.env
+    php /api/artisan jwt:secret
     php /api/artisan migrate
 fi
 
