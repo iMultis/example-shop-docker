@@ -1,4 +1,5 @@
 api
 .idea
 .env
+docker/php/data
 docker/postgres/data
