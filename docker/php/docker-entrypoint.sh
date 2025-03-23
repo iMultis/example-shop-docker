@@ -8,6 +8,7 @@ fi
 
 if [ ! -f /api/composer.json ]; then
     echo "No API repository found. Please, clone https://github.com/iMultis/example-shop-api to api directory of the project."
+    exit
 fi
 
 # Run only once to initialize the app
