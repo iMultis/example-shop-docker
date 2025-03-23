@@ -6,6 +6,10 @@ if [ "${1#-}" != "$1" ]; then
     set -- php-fpm "$@"
 fi
 
+if [ ! -f /api/composer.json ]; then
+    echo "No API repository found. Please, clone https://github.com/iMultis/example-shop-api to api directory of the project."
+fi
+
 # Run only once to initialize the app
 if [ ! -f /var/app/initalized ]; then
     echo "Initializing application"
